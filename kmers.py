@@ -21,7 +21,6 @@ def stream_kmers(file, k):
     kmer1 = 0
     kmer2 = 0
     encodage = {'A' : 0, 'C' : 1, 'T' : 2, 'G' : 3}
-    lst=[]
 
     for text in file: 
         #Parcours pour la seq [0:k-1]    
