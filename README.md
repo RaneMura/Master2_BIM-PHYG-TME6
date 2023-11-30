@@ -14,7 +14,7 @@ Après exécution du code, voici la matrice des distances dés bactéries obtenu
 
 Insérer la martice 
 
-Voici également le temps d'exécution qu'il a fallu pour calculer cette matrice ainsi que l'espace mémoire maximale. La commande ```/usr/bin/time -v``` a été utilisée sur Ubuntu et la commande ```/usr/bin/time -v``` a été utilisée sur macOS.
+Voici également le temps d'exécution qu'il a fallu pour calculer cette matrice ainsi que l'espace mémoire maximale. La commande ```/usr/bin/time -v``` a été utilisée sur Ubuntu et la commande ```/usr/bin/time -l``` a été utilisée sur macOS.
 
 En observant les distances obtenues, que pouvez-vous dire des espèces présentes dans cet échantillon ?
 
