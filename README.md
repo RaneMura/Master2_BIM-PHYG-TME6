@@ -23,6 +23,13 @@ Après exécution du code, voici la matrice des distances dés bactéries obtenu
 
 Voici également le temps d'exécution qu'il a fallu pour calculer cette matrice ainsi que l'espace mémoire maximale. La commande ```/usr/bin/time -v``` a été utilisée sur Ubuntu et la commande ```/usr/bin/time -l``` a été utilisée sur macOS.
 
-En observant les distances obtenues, que pouvez-vous dire des espèces présentes dans cet échantillon ?
+Voici le résultat obtenu sur Ubuntu : 
 
-Répondre ?
+![Screenshot_from_2023-11-30_11-35-43](https://github.com/RaneMura/Master2_BIM-PHYG-TME6/assets/74711674/bcebee1b-f05e-4308-9acc-9e2381537667)
+
+Voici le résultat obtenu sur Mac : 
+
+<img width="371" alt="Capture_decran_2023-11-30_a_11 27 31" src="https://github.com/RaneMura/Master2_BIM-PHYG-TME6/assets/74711674/f7632040-6a06-40f5-be3a-01fa445484b3">
+
+
+En observant les distances obtenues, deux espèces "GCF_008244785.1_ASM824478v1_genomic.fna" et "GCF_000006945.2_ASM694v2_genomic.fna" sont très proches avec une valeur de 0.9377.
