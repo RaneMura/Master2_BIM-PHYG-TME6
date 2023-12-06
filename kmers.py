@@ -1,3 +1,4 @@
+import re
 
 def kmer2str(val, k):
     """ Transform a kmer integer into a its string representation
@@ -23,6 +24,7 @@ def stream_kmers(file, k):
     encodage = {'A' : 0, 'C' : 1, 'T' : 2, 'G' : 3}
 
     for text in file: 
+        text  = re.sub(r'[^ACTG]','',text)
         #Parcours pour la seq [0:k-1]    
         for letter in text[:k-1]:
             nucl = encodage[letter]
@@ -53,3 +55,5 @@ def stream_kmers(file, k):
             kmer2&=mask
 
             yield min(kmer1,kmer2)
+        
+ 
