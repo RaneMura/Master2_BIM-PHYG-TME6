@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     filenames = list(files.keys())
     
-    jac = np.ones((5,5))
+    jac = np.zeros((5,5))
 
     for i in range(len(files)):
         for j in range(i+1, len(files)):
@@ -48,4 +48,3 @@ if __name__ == "__main__":
 
     jac_df = pd.DataFrame(jac, index = filenames, columns = filenames)
     jac_df.to_csv("jaccard.csv")
-
