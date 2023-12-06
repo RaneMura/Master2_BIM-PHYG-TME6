@@ -1,5 +1,4 @@
 from os import listdir, path
-import re
 
 def load_fna(filename):
     """ Loads a fasta formated file into a list of sequences.
@@ -16,8 +15,7 @@ def load_fna(filename):
                     texts.append("".join(txt))
                 txt = []
             else:
-                line_wo = re.sub(r'[^ACTG]','',line.strip())
-                txt.append(line_wo)
+                txt.append(line.strip())
 
     if len(txt) > 0:
         texts.append("".join(txt))
