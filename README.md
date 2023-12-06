@@ -31,5 +31,6 @@ Voici le résultat obtenu sur Mac :
 
 <img width="371" alt="Capture_decran_2023-11-30_a_11 27 31" src="https://github.com/RaneMura/Master2_BIM-PHYG-TME6/assets/74711674/f7632040-6a06-40f5-be3a-01fa445484b3">
 
-
-En observant les distances obtenues, deux espèces "GCF_008244785.1_ASM824478v1_genomic.fna" et "GCF_000006945.2_ASM694v2_genomic.fna" sont très proches avec une valeur de 0.9377.
+Le calcul de la matrice de Jaccard a pour but d’identifier les relations de similarité entre les différentes espèces bactériennes. En effet, cette distance nous permet de mesurer la dissimilarité (complément de la similarité : Similarité = 1- distance_de_jaccard) entre les séquences paires à paires. Plus la distance dans la matrice entre deux espèces est proche de 0 plus les séquences des espèces sont proches, et inversement plus cette distance s’approche de 1 plus la similarité entre les séquences est faible. D’après la matrice calculée on peut déduire que:
+- Les 2 espèces les plus proches sont  “GCF_020526745.1_ASM2052674v1_genomic” et “GCF_014892695.1_ASM1489269v1_genomic” elles ont un pourcentage de similarité d’environ 1-0.001 = 0.999% .
+- Les 2 espèces les plus éloignées sont “GCF_008244785.1_ASM824478v1_genomic” et “GCF_000006945.2_ASM694v2_genomic” elles ont un pourcentage de similarité d’environ 1-0.937 = 0.063% .
