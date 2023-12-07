@@ -10,6 +10,8 @@ Les données sont disponibles sur [ce lien](https://we.tl/t-ACiDxJko7s)
 
 Le but est d'obtenir toutes les distances paire à paire des différentes bactéries.
 
+Concernant le code, les nucléotides différents aux quatres principaux ont été retiré avec une fonction regex (re.sub) dans la fonction stream_kmers.
+
 Après exécution du code, voici la matrice des distances dés bactéries obtenue :
 
 |                                          | GCF_020526745.1_ASM2052674v1_genomic.fna | GCF_014892695.1_ASM1489269v1_genomic.fna | GCF_008244785.1_ASM824478v1_genomic.fna | GCF_020535205.1_ASM2053520v1_genomic.fna | GCF_000006945.2_ASM694v2_genomic.fna |
