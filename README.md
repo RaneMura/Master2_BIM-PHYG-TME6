@@ -1,5 +1,5 @@
 
-# Alignment free - TP 1 (PHYG TME6)
+# Alignment free - TP 2 (PHYG TME6)
 
 ## Auteurs : Aya Elmesaoudi et Sharane K.Murali
 
