@@ -1,4 +1,5 @@
 import re
+import heapq
 
 def kmer2str(val, k):
     """ Transform a kmer integer into a its string representation
@@ -55,5 +56,21 @@ def stream_kmers(file, k):
             kmer2&=mask
 
             yield min(kmer1,kmer2)
-        
- 
+
+def xorshift(seed):
+    seed ^= (seed << 21)
+    seed ^= (seed >> 35)
+    seed ^= (seed << 4)
+    return seed & 0xFFFFFFFFFFFFFFFF
+
+
+def echantillonage(f,k,s): 
+    sketch=[-2**63]*s
+    heapq.heapify(sketch) 
+    for kmer in stream_kmers(f,k):
+        elem=-sketch[0]
+        if kmer<elem:
+            heapq.heappop(sketch) 
+            heapq.heappush(sketch,-kmer)
+    sketch=[-x for x in sketch]
+    return sketch
