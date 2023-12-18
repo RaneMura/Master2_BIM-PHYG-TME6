@@ -29,8 +29,8 @@ Voici le résultat obtenu sur Ubuntu :
 #EN ATTENTE
 
 Voici le résultat obtenu sur Mac : 
+<img width="324" alt="Capture d’écran 2023-12-18 à 18 55 16" src="https://github.com/RaneMura/Master2_BIM-PHYG-TME6/assets/74711674/b73b8e54-8f20-45f8-b41d-6f52dac68cfb">
 
-<img width="326" alt="Capture d’écran 2023-12-18 à 14 55 10" src="https://github.com/RaneMura/Master2_BIM-PHYG-TME6/assets/74711674/621fe72c-0256-4cd0-9b75-f058da48226f">
 
 Nous pouvons constater qu'une diminution de l'utilisation de la mémoire est visible.
 
