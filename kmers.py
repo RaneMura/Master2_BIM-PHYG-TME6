@@ -72,5 +72,4 @@ def echantillonage(f,k,s):
         if kmer<elem:
             heapq.heappop(sketch) 
             heapq.heappush(sketch,-kmer)
-    sketch=[-x for x in sketch]
     return sketch
