@@ -7,8 +7,8 @@ def jaccard_echantillon(fileA, fileB, k,s):
 
     i = j = U = I = 0
 
-    l1 = sorted([x for x in  echantillonage(fileA,k,s)])
-    l2 = sorted([x for x in  echantillonage(fileB,k,s)])
+    l1 = sorted([-x for x in  echantillonage(fileA,k,s)])
+    l2 = sorted([-x for x in  echantillonage(fileB,k,s)])
 
     while i<len(l1) and j<len(l2):
         if l1[i] == l2[j]: 
