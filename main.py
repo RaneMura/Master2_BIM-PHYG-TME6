@@ -1,32 +1,29 @@
 from loading import load_directory
-from kmers import stream_kmers, kmer2str
+from kmers import echantillonage
 import numpy as np
 import pandas as pd
 
-def jaccard(fileA, fileB, k):
+def jaccard_echantillon(fileA, fileB, k,s):
 
-    dico = {}
-    Taille_U = 0
-    Taille_I = 0
+    i = j = U = I = 0
 
-    for kmer in stream_kmers(fileA,k):
-        dico[kmer] = 1 if kmer not in dico else dico[kmer] + 1
-        Taille_U +=1
+    l1 = sorted([x for x in  echantillonage(fileA,k,s)])
+    l2 = sorted([x for x in  echantillonage(fileB,k,s)])
 
-    for kmer in stream_kmers(fileB,k):
-        
-        if kmer in dico :
-
-            Taille_I += 1
-            dico[kmer]-=1
-            if dico[kmer] == 0:
-                del dico[kmer]
-		
-        else:
-            Taille_U += 1
-          
-    return Taille_I/Taille_U
-
+    while i<len(l1) and j<len(l2):
+        if l1[i] == l2[j]: 
+            i+=1
+            j+=1
+            U+=1
+            I+=1
+        else :
+            U+=1
+            if l1[i] < l2[j]:
+                i+=1    
+            else :
+                j+=1
+    
+    return I/U
 
 if __name__ == "__main__":
     # Load all the files in a dictionary
@@ -40,7 +37,7 @@ if __name__ == "__main__":
     for i in range(len(files)):
         for j in range(i+1, len(files)):
         
-            jac_val = jaccard(files[filenames[i]], files[filenames[j]], k)
+            jac_val = jaccard_echantillon(files[filenames[i]], files[filenames[j]], k,10000)
             jac[i,j]  = jac_val
             jac[j,i] = jac_val
 
