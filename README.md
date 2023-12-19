@@ -38,7 +38,7 @@ Nous pouvons constater qu'une diminution de l'utilisation de la mémoire ainsi q
 
 Si on se penche du côté des résultats : 
 
-Voici la matrice obtenu sur le précédent TME : 
+Voici la matrice de similarité obtenue sur le précédent TME : 
 
 |                                          | GCF_020526745.1_ASM2052674v1_genomic.fna | GCF_014892695.1_ASM1489269v1_genomic.fna | GCF_008244785.1_ASM824478v1_genomic.fna | GCF_020535205.1_ASM2053520v1_genomic.fna | GCF_000006945.2_ASM694v2_genomic.fna |
 |------------------------------------------|------------------------------------------|------------------------------------------|-----------------------------------------|------------------------------------------|--------------------------------------|
@@ -49,7 +49,7 @@ Voici la matrice obtenu sur le précédent TME :
 | GCF_000006945.2_ASM694v2_genomic.fna     | 0.019091889920944443                     | 0.0017591971757668513                    | 0.9377564127983907                      | 0.01791031228841616                      | 1.0                                  |
 
 
-Voici la matrice obtenu sur ce TME :
+Voici la matrice de similarité obtenu sur ce TME :
 
 |                                          | GCF_020526745.1_ASM2052674v1_genomic.fna | GCF_014892695.1_ASM1489269v1_genomic.fna | GCF_008244785.1_ASM824478v1_genomic.fna | GCF_020535205.1_ASM2053520v1_genomic.fna | GCF_000006945.2_ASM694v2_genomic.fna |
 |------------------------------------------|------------------------------------------|------------------------------------------|-----------------------------------------|------------------------------------------|--------------------------------------|
