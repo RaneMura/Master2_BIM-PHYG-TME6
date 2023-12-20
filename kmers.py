@@ -1,5 +1,6 @@
 import re
 import heapq
+import math
 
 def kmer2str(val, k):
     """ Transform a kmer integer into a its string representation
@@ -65,7 +66,7 @@ def xorshift(seed):
 
 
 def echantillonage(f,k,s): 
-    sketch=[-2**63]*s
+    sketch=[-math.inf]*s
     heapq.heapify(sketch) 
     for kmer in stream_kmers(f,k):
         elem=-sketch[0]
